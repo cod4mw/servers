@@ -13,14 +13,19 @@ class IndexPage extends React.Component {
     };
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     let serverInfos = [];
     for (let server of servers) {
-      let res = await axios.get(`https://cod4mw-serverinfo-api.glitch.me/${server.address}`)
-      serverInfos.push(res.data);
-      this.setState({
-        servers: serverInfos
-      });
+      axios.get(`https://cod4mw-serverinfo-api.glitch.me/${server.address}`)
+        .then(res => {
+          serverInfos.push(res.data);
+          this.setState({
+            servers: serverInfos
+          });
+        })
+        .catch(e => {
+          console.error(e);
+        });
     }
   }
 
