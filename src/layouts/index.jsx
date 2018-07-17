@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './index.css';
 
 
@@ -12,9 +14,11 @@ class DefaultLayout extends React.Component {
   render() {
     return (
       <root>
+        <Header />
         <main>
           { this.props.children() }
         </main>
+        <Footer />
       </root>
     );
   }
