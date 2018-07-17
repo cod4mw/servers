@@ -22,7 +22,6 @@ class IndexPage extends React.Component {
         servers: serverInfos
       });
     }
-    console.log(serverInfos);
   }
 
   render() {
