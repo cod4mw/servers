@@ -60,7 +60,7 @@ class IndexPage extends React.Component {
                   </div>
                   <div className='footer'>
                     <div className='players'>
-                      { server.data.currentPlayers + '/' + server.data.maxPlayers + ' Players' }
+                      { `${server.data.currentPlayers}/${server.data.maxPlayers} Players` }
                     </div>
                     <div className='additionals'>
                       {
