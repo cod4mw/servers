@@ -1,0 +1,27 @@
+{
+  "name": "gameservers",
+  "description": "List of Call of Duty 4: Modern Warfare game servers.",
+  "version": "1.0.0",
+  "homepage": "https://cod4mw.github.io/servers",
+  "private": true,
+  "author": "Sankarsan Kampa (a.k.a. k3rn31p4nic)",
+  "dependencies": {
+    "gatsby": "^1.9.273",
+    "gatsby-link": "^1.6.45",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [],
+  "license": "GPL-3.0",
+  "main": "",
+  "scripts": {
+    "start": "gatsby develop -o",
+    "build": "gatsby build",
+    "serve": "gatsby serve -o",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.jsx\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  }
+}
