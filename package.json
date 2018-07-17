@@ -6,6 +6,7 @@
   "private": true,
   "author": "Sankarsan Kampa (a.k.a. k3rn31p4nic)",
   "dependencies": {
+    "axios": "^0.18.0",
     "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.45",
     "gatsby-plugin-react-helmet": "^2.0.11",

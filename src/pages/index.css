@@ -1,0 +1,97 @@
+div.IndexPage {
+  padding: 50px 0;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+div.IndexPage h2 {
+  text-align: center;
+}
+
+#servers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#servers .server {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 200px;
+  border-left: 5px solid gray;
+  border-radius: 3px;
+  color: #ddd;
+  background-color: #181818;
+  box-shadow: 0 5px 10px 0 rbga(0, 0, 0, .5);
+  transition: all .2s ease;
+  flex-wrap: wrap;
+}
+#servers .server:hover {
+  transform: translateY(-5px);
+  border-color: #2ed532;
+}
+
+#servers .server .name,
+#servers .server .ip,
+#servers .server .footer {
+  width: 100%;
+}
+
+#servers .server .name,
+#servers .server .ip {
+  margin-bottom: 5px;
+}
+
+#servers .server .name {
+  color: white;
+  font-weight: bold;
+}
+
+#servers .server .ip {
+  font-family: monospace;
+}
+
+#servers .server .map,
+#servers .server .gametype {
+  width: 50%;
+}
+
+#servers .server .footer {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+#servers .server .footer div.players,
+#servers .server .footer div.additionals {
+  display: inline-block;
+}
+
+#servers .server .footer div.additionals {
+  float: right;
+}
+
+#servers .server .footer div.additionals span {
+  padding: 2px;
+}
+
+#servers .server .label {
+  color: white;
+}
+
+#servers .server button.join-button {
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: none;
+  background-color: #2ed532;
+  color: white;
+  font-size: 1.1em;
+  transition: background-color .2s ease;
+}
+#servers .server button.join-button:hover {
+  background-color: #29c02d;
+}
