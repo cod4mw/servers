@@ -17,7 +17,7 @@
   "main": "",
   "scripts": {
     "start": "gatsby develop -o",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve -o",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.jsx\"",
     "test": "echo \"Error: no test specified\" && exit 1"

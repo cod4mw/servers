@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/servers`,
   siteMetadata: {
     title: 'Game Servers - Call of Duty 4: Modern Warfare',
     description: 'List of Call of Duty 4: Modern Warfare game servers.'
