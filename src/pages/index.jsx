@@ -19,6 +19,7 @@ class IndexPage extends React.Component {
       axios.get(`https://cod4mw-serverinfo-api.glitch.me/${server.address}`)
         .then(res => {
           serverInfos.push(res.data);
+          console.log(res.data);
           this.setState({
             servers: serverInfos
           });
@@ -55,21 +56,21 @@ class IndexPage extends React.Component {
                   <div className='gametype'>
                     <div className='label'>Gametype</div>
                     <div className='content'>
-                      { server.data.gametype }
+                      { server.data.raw.g_gametype }
                     </div>
                   </div>
                   <div className='footer'>
                     <div className='players'>
-                      { `${server.data.currentPlayers}/${server.data.maxPlayers} Players` }
+                      { `${server.data.players.length}/${server.data.maxplayers} Players` }
                     </div>
                     <div className='additionals'>
                       {
-                        server.data.voice
+                        server.data.raw.sv_voice === '1'
                         ? <span title='Voice Enabled'>🔉</span>
                         : <span title='Voice Disabled'>🔇</span>
                       }
                       {
-                        server.data.protected
+                        server.data.password
                         ? <span title='Private Server'>🔒</span>
                         : <span title='Public Server'>🔓</span>
                       }
