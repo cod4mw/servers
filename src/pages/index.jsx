@@ -19,7 +19,6 @@ class IndexPage extends React.Component {
       axios.get(`https://cod4mw-serverinfo-api.glitch.me/${server.address}`)
         .then(res => {
           serverInfos.push(res.data);
-          console.log(res.data);
           this.setState({
             servers: serverInfos
           });
